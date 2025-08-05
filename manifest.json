@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Secure Password Manager",
+  "version": "1.0",
+  "description": "A secure password manager with OTP and biometric authentication support",
+  "permissions": [
+    "storage",
+    "webAuthn",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon16.png",
+      "128": "icon16.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon16.png",
+    "128": "icon16.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
